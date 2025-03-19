@@ -16,3 +16,10 @@ for i in range(1, N):
 
     for j in range(1, insert_point, -1):
         A[j] = A[j-1]
+
+    A[insert_point] = insert_value
+
+S[0] = A[0]
+
+for i in range(1, N):
+    S[i] = S[i-1] + A[i]
